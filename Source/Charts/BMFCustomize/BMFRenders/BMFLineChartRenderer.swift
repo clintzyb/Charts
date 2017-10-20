@@ -911,7 +911,6 @@ extension BMFLineChartRenderer{
                     vailedDataArray.append(e1)
                     before = e1
                 }
-                
                 if nil != before{
                     chartsSegmentArray.append(values)
                     values = [ChartDataEntry]()
