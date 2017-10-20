@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyTestLine: LineChartView {
+open class MyTestLine: LineChartView {
 
     /*
     // Only override draw() if you perform custom drawing.
