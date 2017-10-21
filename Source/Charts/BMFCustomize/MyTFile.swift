@@ -1,5 +1,5 @@
 //
-//  ffff123.swift
+//  MyTFile.swift
 //  Charts
 //
 //  Created by zhu yuanbin on 2017/10/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ffff123: UIView {
+class MyTFile: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.
