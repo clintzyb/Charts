@@ -1,13 +1,13 @@
 //
-//  MyTestLine.swift
+//  fffffff.swift
 //  Charts
 //
-//  Created by zhu yuanbin on 2017/10/20.
+//  Created by zhu yuanbin on 2017/10/21.
 //
 
 import UIKit
 
-open class MyTestLine: LineChartView {
+class fffffff: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.
