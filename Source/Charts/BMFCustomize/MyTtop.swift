@@ -1,5 +1,5 @@
 //
-//  MyTFile.swift
+//  MyTtop.swift
 //  Charts
 //
 //  Created by zhu yuanbin on 2017/10/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyTFile: UIView {
+open class MyTtop: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

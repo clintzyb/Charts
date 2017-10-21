@@ -18,7 +18,7 @@
 		063E6E331F99E1700028CB82 /* BMFLineChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E6E2F1F99DE4D0028CB82 /* BMFLineChartRenderer.swift */; };
 		063E6E351F99E2F00028CB82 /* BMFLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E6E341F99E2F00028CB82 /* BMFLineChartView.swift */; };
 		064989461F5C99C7006E8BB3 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064989451F5C99C7006E8BB3 /* Snapshot.swift */; };
-		06FF1EC31F9B074B0058AFED /* MyTFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF1EC21F9B074B0058AFED /* MyTFile.swift */; };
+		06FF1EC51F9B07950058AFED /* MyTtop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF1EC41F9B07950058AFED /* MyTtop.swift */; };
 		0A772AEC08246FEC480673E5 /* PieRadarChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C9631C69B2D772BBD9232 /* PieRadarChartViewBase.swift */; };
 		0C52C70C6E6EA09BD7426386 /* RadarChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB57D6FA41029B08F26D7B /* RadarChartData.swift */; };
 		0CAF514A280FF6A14E2A1A23 /* CombinedChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EF1FE22549E885C8F40738 /* CombinedChartView.swift */; };
@@ -171,7 +171,7 @@
 		063E6E2F1F99DE4D0028CB82 /* BMFLineChartRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMFLineChartRenderer.swift; sourceTree = "<group>"; };
 		063E6E341F99E2F00028CB82 /* BMFLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMFLineChartView.swift; sourceTree = "<group>"; };
 		064989451F5C99C7006E8BB3 /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Snapshot.swift; path = Tests/Charts/Snapshot.swift; sourceTree = "<group>"; };
-		06FF1EC21F9B074B0058AFED /* MyTFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTFile.swift; sourceTree = "<group>"; };
+		06FF1EC41F9B07950058AFED /* MyTtop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTtop.swift; sourceTree = "<group>"; };
 		0BD9DF16AF59680A3BB49452 /* IAxisValueFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAxisValueFormatter.swift; path = Source/Charts/Formatters/IAxisValueFormatter.swift; sourceTree = "<group>"; };
 		0DABDBBCCE6B3620C967F04A /* LineChartRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartRenderer.swift; path = Source/Charts/Renderers/LineChartRenderer.swift; sourceTree = "<group>"; };
 		0DDE409E9ECF54D2C146A6F0 /* CombinedChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinedChartData.swift; path = Source/Charts/Data/Implementations/Standard/CombinedChartData.swift; sourceTree = "<group>"; };
@@ -376,7 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				063E6E341F99E2F00028CB82 /* BMFLineChartView.swift */,
-				06FF1EC21F9B074B0058AFED /* MyTFile.swift */,
+				06FF1EC41F9B07950058AFED /* MyTtop.swift */,
 			);
 			name = BMFChartViews;
 			sourceTree = "<group>";
@@ -930,7 +930,6 @@
 				7EE6EFE70CF4D8B09CAFCD01 /* AnimatedMoveViewJob.swift in Sources */,
 				CC7F8198A13249B5DEBBF25E /* AnimatedViewPortJob.swift in Sources */,
 				0577C2B38BCE4C871F262714 /* AnimatedZoomViewJob.swift in Sources */,
-				06FF1EC31F9B074B0058AFED /* MyTFile.swift in Sources */,
 				02A6E6E1A82A27A66B8D08C4 /* MoveViewJob.swift in Sources */,
 				9400725714D0DA707DDECD2E /* ViewPortJob.swift in Sources */,
 				AEE9C4E4AC02B8FB3CD21975 /* ZoomViewJob.swift in Sources */,
@@ -969,6 +968,7 @@
 				8102A555DD6C93AC1290EA7C /* Fill.swift in Sources */,
 				E9FF0ECB5E0CA92DBF4C1BC4 /* Platform.swift in Sources */,
 				DE0F434FE8C24C52B023370F /* Transformer.swift in Sources */,
+				06FF1EC51F9B07950058AFED /* MyTtop.swift in Sources */,
 				8A463E2947F211C594CA5E95 /* TransformerHorizontalBarChart.swift in Sources */,
 				515E286E6C47594D3FFA3DD1 /* ViewPortHandler.swift in Sources */,
 			);
