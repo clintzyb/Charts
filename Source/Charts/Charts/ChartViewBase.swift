@@ -33,6 +33,11 @@ public protocol ChartViewDelegate
     
     // Callbacks when the chart is moved / translated via drag gesture.
     @objc optional func chartTranslated(_ chartView: ChartViewBase, dX: CGFloat, dY: CGFloat)
+    
+    // 朱元斌 2017-10-21 添加 
+    @objc optional func chartViewPanGustureEndOrCancelled(_ chartView: ChartViewBase)
+    
+    @objc optional func charViewLongPressGestureEndOrCancelled(_ charView:ChartViewBase)
 }
 
 open class ChartViewBase: NSUIView, ChartDataProvider, AnimatorDelegate
