@@ -1,5 +1,5 @@
 //
-//  fffffff.swift
+//  ffff123.swift
 //  Charts
 //
 //  Created by zhu yuanbin on 2017/10/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class fffffff: UIView {
+class ffff123: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.
