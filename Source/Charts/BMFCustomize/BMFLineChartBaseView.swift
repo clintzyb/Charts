@@ -843,17 +843,17 @@ open class BMFLineChartBaseView: ChartViewBase, BarLineScatterCandleBubbleChartD
     {
         var translation = translation
         
-        if isTouchInverted()
-        {
-            if self is HorizontalBarChartView
-            {
-                translation.x = -translation.x
-            }
-            else
-            {
-                translation.y = -translation.y
-            }
-        }
+//        if isTouchInverted()
+//        {
+//            if self is HorizontalBarChartView
+//            {
+//                translation.x = -translation.x
+//            }
+//            else
+//            {
+//                translation.y = -translation.y
+//            }
+//        }
         
         let originalMatrix = _viewPortHandler.touchMatrix
         
@@ -2013,7 +2013,59 @@ open class BMFLineChartBaseView: ChartViewBase, BarLineScatterCandleBubbleChartD
         
         return min(xAxis._axisMaximum, Double(pt.x))
     }
+    
+    
+    //MARK:由于swift不能在extension中override方法 所以只能写在类后面
+    //TODO:该分类主要用于重写ChartViewBase的一些方法
+    open override func highlightValue(_ highlight: Highlight?, callDelegate: Bool) {
+        var entry: ChartDataEntry?
+        
+        var h = highlight
+        if let b = h{
+            let inValidValue = 0.000001
+            if(b.y <= inValidValue){
+                h = nil
+            }
+        }
+        if h == nil
+        {
+            //            _indicesToHighlight.removeAll(keepingCapacity: true)
+        }
+        else
+        {
+            // set the indices to highlight
+            entry = _data?.entryForHighlight(h!)
+            if entry == nil
+            {
+                h = nil
+                _indicesToHighlight.removeAll(keepingCapacity: false)
+            }
+            else
+            {
+                _indicesToHighlight = [h!]
+            }
+        }
+        
+        if callDelegate && delegate != nil
+        {
+            if h == nil
+            {
+                delegate!.chartValueNothingSelected?(self)
+            }
+            else
+            {
+                // notify the listener
+                delegate!.chartValueSelected?(self, entry: entry!, highlight: h!)
+            }
+        }
+        
+        // redraw the chart
+        setNeedsDisplay()
+    }
 }
+
+
+
 
 
 
