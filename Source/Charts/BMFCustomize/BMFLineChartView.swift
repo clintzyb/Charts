@@ -7,6 +7,11 @@
 
 import Foundation
 import CoreGraphics
+
+
+#if !os(OSX)
+    import UIKit
+#endif
 // 继承LineChartView用于重写initialize 为了 renderer实现自己定义的render
 open class BMFLineChartView: BMFLineChartBaseView,LineChartDataProvider {
     
